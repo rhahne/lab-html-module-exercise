@@ -6,6 +6,9 @@ h2{
   font-size: 48px;
   font-weight: 200;
 }
+body{
+  margin: 0px;
+}
 
 /*** NAV **/
 nav {
@@ -51,7 +54,7 @@ header{
 .header-text{
   max-width: 400px;
 }
-.npm-button{
+.npm-button1{
   background-color:rgb(240, 146, 51);
   color: white;
   padding: 10px 40px;
@@ -73,4 +76,71 @@ header{
 }
 .login-content{
   float: right;
+}
+
+
+#section1{
+  background-color: rgb(39, 53, 71);
+  padding: 50px 0;
+}
+.collab{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  color: white;
+}
+.npm-button2{
+  background-color:rgb(203, 56, 55);
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 30px;
+}
+.collab_content{
+ width: 500px;
+ float: right;
+}
+.collab_image{
+  height: 300px;
+}
+
+
+#section2{
+  background-image: url("images/forklift.svg");
+  background-size: cover;
+  padding: 150px 0;
+}
+.section2-content{
+  width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+.section2-text{
+  width: 500px;
+}
+.npm-button3{
+  background-color:rgb(49, 68, 88);
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 30px;
+}
+
+#section3{
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
+.section3-top{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section3-content{
+  width: 1200px;
+  margin: 0 auto;
+}
+.section-class{
+  width: 33%;
+  float: left;
+  text-align: center;
 }
