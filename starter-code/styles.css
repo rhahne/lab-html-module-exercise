@@ -1,14 +1,18 @@
+/*** GENERAL ***/
 *{
   font-family: "Open Sans", OpenSans, sans-serif;
 }
-
+h2{
+  font-size: 48px;
+  font-weight: 200;
+}
 
 /*** NAV **/
 nav {
   background-color: #C12127;
   color: rgba(255,255,255,0.8);
   padding-top: 15px;
-  height: 100px;
+  height: 40px;
 }
 nav a {
   color: rgba(255,255,255,0.8);
@@ -26,4 +30,47 @@ nav a {
 }
 .top-left{
   float: left;
+}
+
+
+/*** HEADER ***/
+header{
+  background-image: url("images/city-scape.svg");
+}
+.header-top{
+  display: inline-block;
+  padding: 10px;
+}
+.header-content{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  color: white;
+}
+.header-text{
+  max-width: 400px;
+}
+.npm-button{
+  background-color:rgb(240, 146, 51);
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 30px;
+}
+.search-bar{
+  background-color: rgb(31, 82, 111);
+  border: 1px solid gray;
+  height: 30px;
+  margin: 5px;
+}
+.logos{
+  height: 50px;
+  width: auto;
+}
+#npm-logo{
+  float: left;
+}
+.login-content{
+  float: right;
 }
