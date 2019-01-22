@@ -2,18 +2,27 @@
 *{
   font-family: "Open Sans", OpenSans, sans-serif;
 }
+body{
+  margin: 0px;
+}
 h2{
   font-size: 48px;
   font-weight: 200;
   margin-top: 0px;
 }
-body{
-  margin: 0px;
-}
 p, li{
   line-height: 30px;
   font-size: 20px;
   font-weight: 200;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .npm-button{
   color: white;
@@ -23,16 +32,6 @@ p, li{
   font-size: 18px;
   font-weight: 200;
 }
-a{
-  text-decoration: none;
-  color:white;
-}
-.container{
-  width: 1024px;
-  margin: 0 auto;
-}
-
-
 
 /*** NAV **/
 nav {
@@ -40,180 +39,178 @@ nav {
   color: rgba(255,255,255,0.8);
   padding: 15px;
   height: 18px;
-}
-nav, .top-links li a {
-  font-size: 14px;
+  line-height: 20px;
+  display: flex;
 }
 nav a {
   color: rgba(255,255,255,0.8);
   text-decoration: none;
-
 }
-.top-links {
-  display: inline-block;
-  float: right;
-  padding: 0;
+.top-nav-left {
+  flex: 1;
+}
+.top-nav-right ul{
   margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  display: flex;
 }
-.top-links li {
-  display: inline-block;
-  margin: 0 10px;
+.top-nav-right li {
+  padding: 0px 10px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
 }
-.top-left{
-  float: left;
+.top-nav-right ul > li:first-child{
+  padding-left: 0px;
 }
-
-
+.top-nav-right ul > li:last-child{
+  padding-right: 0px;
+}
+@media screen and (max-width: 768px) {
+    .top-nav-left {
+      display: none;
+    }
+  }
 
 /*** HEADER ***/
 header{
   background-image: url("images/city-scape.svg");
+  background-color: #294E67;
 }
 
-/*** HEADER TOP ***/
-
+/*-- HEADER TOP --*/
 .header-top{
   padding: 15px;
-}
-.search-bar{
-  background-color: rgb(31, 82, 111);
-  border: 1px solid gray;
-  padding: 15px;
-  width: 90%;
-}
-.logos{
-  height: 50px;
-  width: auto;
-}
-#npm-logo{ 
-  padding-right: 15px;
-}
-.header-top {
   display: flex;
   justify-content: space-around;
   height: 40px;
 }
-.ht1{
-  flex: 1;
-  }
-.ht2{
-  flex-grow: 7;
-  padding: 0 20px;
-  }
-.ht3{
-  flex: 2;
-  display: flex;
-  align-items:center;
+.search-bar{
+  background-color: rgb(31, 82, 111);
+  border: 1px solid gray;
+  padding: 11px 0;
+  padding-left: 11px;
+  font-size: 18px;
+  width: calc(100% - 60px);;
 }
-  .login-text{
-    display: table-cell; 
-    vertical-align: middle; 
-    text-align: center;
-  }
-  .login-text{
-    padding-right: 10px;
-  }
-  .login-text, .login-text a{
-    color: white;
-    text-decoration: none;
-  }
 .search-bar-button{
   height: 45px;
   background-color: rgb(31, 82, 111);
   border: 1px solid grey;
   padding: 15px;
+  float: right;
+}
+.logos{
+  height: 50px;
+  width: auto;
+}
+.ht-part1{
+  flex-basis: 125px;
+  }
+.ht-part2{
+  flex: 1;
+  padding: 0 20px;
+  width: 100%;
+  }
+.ht-part3{
+  flex-basis: 175px;
+  display: flex;
+  align-items:center;
+}
+.login-text{
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+}
+.login-text{
+  padding-right: 10px;
+}
+.login-text, .login-text a{
+  color: white;
+  text-decoration: none;
 }
 
+/*** Header content ***/
+.header-content{
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: white;
+}
+.header-text{
+  max-width: 400px;
+}
+.npm-button-orange{
+  background-color:rgb(240, 146, 51);
+}
 
+/*** SECTION 1 ***/
+#section1{
+  background-color: rgb(39, 53, 71);
+  padding: 50px 0;
+  color: white;
+  padding: 200px 0;
+}
+.npm-button-red{
+  background-color:rgb(203, 56, 55);
+}
+@media screen and (min-width: 768px) {
+  #section1 .container{
+    display: flex;
+  }
+  .s1-content{
+  flex: 1;
+  padding-left: 50px;
+  }
+  .s1-image{
+    flex: 1;
+  }
+}
+.s1-image img{
+  max-height: 300px;
+}
+.s1-content h2{
+  font-size: 36px;
+ }
 
-  /*** Header content ***/
-  .header-content{
-    padding-top: 80px;
-    padding-bottom: 100px;
-    color: white;
+/*** SECTION 2 ***/
+#section2{
+  background-image: url("images/forklift.svg");
+  background-size: cover;
+  padding: 150px 0;
+  color: white;
+}
+.s2-content{
+  max-width: 500px;
+}
+.npm-button-black{
+  background-color:rgb(49, 68, 88);
+}
 
+/*** SECTION 3 ***/
+@media screen and (min-width: 768px) {
+  .s3-content{
+    display: flex;
   }
-  .header-text{
-    max-width: 400px;
-  }
-  .npm-button1{
-    background-color:rgb(240, 146, 51);
-    color: white;
-    padding: 10px 80px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 200;
-  }
-  .npm-button-orange{
-    background-color:rgb(240, 146, 51);
-  }
-
-
-  /*** SECTION 1 ***/
-  #section1{
-    background-color: rgb(39, 53, 71);
-    padding: 50px 0;
-    color: white;
-    padding: 200px 0;
-  }
-  .npm-button-red{
-    background-color:rgb(203, 56, 55);
-  }
-  .collab_content{
-   width: 500px;
-   float: right;
-
-  }
-  .collab_content h2{
-    font-size: 36px;
-   }
-
-  .collab_image{
-    height: 266px;
-  }
-
-  /*** SECTION 2 ***/
-  #section2{
-    background-image: url("images/forklift.svg");
-    background-size: cover;
-    padding: 150px 0;
-  }
-  .section2-content{
-    width: 1200px;
-    margin: 0 auto;
-    color: white;
-  }
-  .section2-text{
-    width: 500px;
-  }
-  .npm-button-black{
-    background-color:rgb(49, 68, 88);
-  }
-
-  /*** SECTION 3 ***/
-  #section3{
-    padding: 50px 0;
-    margin-bottom: 100px;
-    color: black;
-  }
-  #section3 h2{
-    font-size: 36px;
-  }
-  .section3-top{
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .section-class{
-    width: 29.33%;
-    padding: 1%;
-    margin: 1%;
-    float: left;
-    text-align: center;
-  }
-
-  .section-class img{
-    width: 100px;
-    height: 100px;
-  }
+}
+#section3{
+  padding: 50px 0;
+  color: black;
+}
+#section3 h2{
+  font-size: 36px;
+}
+.s3-top{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.s3-text{
+  flex: 1;
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+}
+.s3-text img{
+  width: 100px;
+  height: 100px;
+}
